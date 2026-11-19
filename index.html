@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ACC Consultoria em Segurança</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Barlow+Condensed:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0a0a0b;font-family:'Barlow',system-ui,sans-serif;color:#e9e9ec}
+a{color:inherit;text-decoration:none}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+.nav-link{color:#c9ccd1;font-size:15px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;padding:12px 4px}
+.nav-link:hover{color:#e8b923}
+.btn-gold{background:#e8b923;color:#0a0a0b}
+.btn-gold:hover{background:#f3c94a}
+.btn-line:hover{border-color:#e8b923;color:#e8b923}
+.card:hover{border-color:#e8b923}
+.cv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.cv li{position:relative;padding-left:18px;font-size:15px;line-height:1.5;color:#b9bcc4}
+.cv li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:#e8b923}
+</style>
+</helmet>
+
+<div style="background:#0a0a0b;width:100%;overflow-x:hidden">
+
+<!-- HEADER -->
+<header style="border-bottom:1px solid #26262b;background:#0a0a0b">
+<div style="max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+<a href="#inicio" aria-label="ACC Consultoria em Segurança" style="display:flex;align-items:center;gap:12px">
+<svg width="34" height="40" viewBox="0 0 34 40" fill="none" aria-hidden="true"><path d="M17 2 3 7v12c0 9 6 16 14 19 8-3 14-10 14-19V7L17 2Z" stroke="#e8b923" stroke-width="2.5" stroke-linejoin="round"></path><path d="M17 2v36" stroke="#c9ccd1" stroke-width="2.5"></path></svg>
+<span style="display:flex;flex-direction:column;line-height:1">
+<span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;letter-spacing:.06em;color:#f2f2f4">ACC</span>
+<span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#e8b923;margin-top:3px">Consultoria em Segurança</span>
+</span>
+</a>
+<nav aria-label="Principal" style="display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px">
+<a class="nav-link" href="#sobre">Sobre</a>
+<a class="nav-link" href="#servicos">Serviços</a>
+<a class="nav-link" href="#diferenciais">Diferenciais</a>
+<a class="nav-link" href="#equipe">Equipe</a>
+<a class="btn-gold" href="#contato" style="padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase;min-height:20px">Fale conosco</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" style="background:radial-gradient(ellipse at 75% 40%,#1a1710 0%,#0a0a0b 60%)">
+<div style="max-width:1200px;margin:0 auto;padding:72px 24px 80px;display:flex;flex-wrap:wrap;align-items:center;gap:48px">
+<div style="flex:1 1 480px;min-width:0">
+<p style="margin:0 0 20px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#e8b923;font-weight:600">Assessoria e Consultoria em Segurança</p>
+<h1 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(40px,6vw,68px);line-height:1.02;text-transform:uppercase;color:#f2f2f4">Na segurança corporativa, credibilidade se constrói com <span style="color:#e8b923">conhecimento, experiência e responsabilidade.</span></h1>
+<p style="margin:28px 0 0;font-size:19px;line-height:1.6;color:#b9bcc4;max-width:560px">Identificar vulnerabilidades, antecipar riscos e orientar decisões exige uma visão integrada da organização. É esse o trabalho da ACC.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:36px">
+<a class="btn-gold" href="#contato" style="padding:16px 30px;border-radius:4px;font-weight:600;font-size:16px;letter-spacing:.04em;text-transform:uppercase">Solicitar contato</a>
+<a class="btn-line" href="#servicos" style="padding:14px 28px;border-radius:4px;font-weight:600;font-size:16px;letter-spacing:.04em;text-transform:uppercase;border:2px solid #4a4a52;color:#e9e9ec">Conheça os serviços</a>
+</div>
+<p style="margin:44px 0 0;font-family:'Barlow Condensed',sans-serif;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:#8d9099">Estratégia · Prevenção · Proteção · Resultados</p>
+</div>
+<div style="flex:1 1 300px;min-width:0;display:flex;justify-content:center">
+<img src="./assets/5737776df81629e265f737baa5798d57.jpg" width="640" height="640" alt="Logo da ACC Consultoria em Segurança: escudo em prata e dourado com uma águia" style="width:100%;max-width:520px;height:auto;aspect-ratio:1 / 1;display:block;border-radius:8px;background:#0a0a0b">
+</div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" style="background:#0f1a30;border-top:1px solid #1d2c4d;border-bottom:1px solid #1d2c4d">
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px;display:flex;flex-wrap:wrap;gap:48px 72px">
+<div style="flex:1 1 380px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#f5c518;font-weight:600">Sobre a ACC</p>
+<h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-transform:uppercase;color:#ffffff">Uma visão integrada da sua organização</h2>
+</div>
+<div style="flex:1 1 440px;min-width:0">
+<p style="margin:0 0 20px;font-size:18px;line-height:1.7;color:#c8d0e0">A ACC é uma assessoria e consultoria em segurança dedicada a empresas e organizações que precisam tomar decisões com base em informação confiável.</p>
+<p style="margin:0 0 20px;font-size:18px;line-height:1.7;color:#c8d0e0">Analisamos o contexto de cada cliente para identificar vulnerabilidades, antecipar riscos e indicar caminhos práticos de proteção, sempre com responsabilidade e discrição.</p>
+<p style="margin:0;font-size:18px;line-height:1.7;color:#c8d0e0">Nosso compromisso é transformar conhecimento e experiência em segurança que se sustenta no dia a dia.</p>
+</div>
+</div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos" style="background:#0a0a0b">
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px">
+<p style="margin:0 0 16px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#e8b923;font-weight:600">Serviços</p>
+<h2 style="margin:0 0 48px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-transform:uppercase;color:#f2f2f4;max-width:720px">Como a ACC protege a sua organização</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:32px 28px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#e8b923" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="19" cy="19" r="11"></circle><path d="m27.5 27.5 11 11"></path><path d="M19 14v5l3 3"></path></svg>
+<h3 style="margin:22px 0 12px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;text-transform:uppercase;color:#f2f2f4">Análise de vulnerabilidades</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#a3a6af">Levantamento detalhado dos pontos fracos da organização para saber onde agir primeiro.</p>
+</article>
+
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:32px 28px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#e8b923" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 5 6 38h32L22 5Z"></path><path d="M22 18v9"></path><circle cx="22" cy="32" r=".8" fill="#e8b923"></circle></svg>
+<h3 style="margin:22px 0 12px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;text-transform:uppercase;color:#f2f2f4">Antecipação de riscos</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#a3a6af">Avaliação preventiva de ameaças para reduzir a chance de problemas antes que aconteçam.</p>
+</article>
+
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:32px 28px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#e8b923" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 4 7 10v11c0 9 6 15 15 19 9-4 15-10 15-19V10L22 4Z"></path><path d="m15 22 5 5 9-10"></path></svg>
+<h3 style="margin:22px 0 12px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;text-transform:uppercase;color:#f2f2f4">Planejamento de proteção</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#a3a6af">Estratégias de segurança corporativa sob medida para a realidade de cada cliente.</p>
+</article>
+
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:32px 28px">
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" stroke="#e8b923" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="22" cy="22" r="17"></circle><path d="m28 16-4 9-9 4 4-9 9-4Z"></path></svg>
+<h3 style="margin:22px 0 12px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:26px;text-transform:uppercase;color:#f2f2f4">Orientação para decisões</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#a3a6af">Assessoria contínua para que gestores decidam com clareza e segurança.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais" style="background:#0f1a30;border-top:1px solid #1d2c4d;border-bottom:1px solid #1d2c4d">
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px">
+<p style="margin:0 0 16px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#f5c518;font-weight:600">Diferenciais</p>
+<h2 style="margin:0 0 48px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-transform:uppercase;color:#ffffff">Estratégia, prevenção, proteção e resultados</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px 28px">
+<div style="border-top:3px solid #f5c518;padding-top:20px">
+<h3 style="margin:0 0 10px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:28px;text-transform:uppercase;color:#ffffff">Estratégia</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#c8d0e0">Cada plano parte do entendimento do negócio e dos seus objetivos.</p>
+</div>
+<div style="border-top:3px solid #f5c518;padding-top:20px">
+<h3 style="margin:0 0 10px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:28px;text-transform:uppercase;color:#ffffff">Prevenção</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#c8d0e0">Agir antes é mais barato e mais seguro do que reagir depois.</p>
+</div>
+<div style="border-top:3px solid #f5c518;padding-top:20px">
+<h3 style="margin:0 0 10px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:28px;text-transform:uppercase;color:#ffffff">Proteção</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#c8d0e0">Medidas práticas e aplicáveis para proteger pessoas, bens e informações.</p>
+</div>
+<div style="border-top:3px solid #f5c518;padding-top:20px">
+<h3 style="margin:0 0 10px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:28px;text-transform:uppercase;color:#ffffff">Resultados</h3>
+<p style="margin:0;font-size:16px;line-height:1.6;color:#c8d0e0">Segurança que se traduz em tranquilidade e decisões melhores para o cliente.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EQUIPE -->
+<section id="equipe" style="background:#0a0a0b">
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px">
+<p style="margin:0 0 16px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#e8b923;font-weight:600">Equipe</p>
+<h2 style="margin:0 0 20px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-transform:uppercase;color:#f2f2f4;max-width:760px">Fale diretamente com quem cuida da sua segurança</h2>
+<p style="margin:0 0 48px;font-size:18px;line-height:1.6;color:#b9bcc4;max-width:680px">O nome ACC vem das iniciais de <strong style="color:#e8b923;font-weight:600">A</strong>demir, <strong style="color:#e8b923;font-weight:600">C</strong>arlos e <strong style="color:#e8b923;font-weight:600">C</strong>elso, a equipe por trás da consultoria.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+
+<!-- ADEMIR -->
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:20px 20px 28px;display:flex;flex-direction:column;gap:18px;min-width:0">
+<div style="position:relative;width:100%;aspect-ratio:4 / 5;border-radius:6px;overflow:hidden;background:#1d1a10;border:1px solid #2c2a1e;display:flex;align-items:center;justify-content:center">
+<span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:120px;color:#3a3418;line-height:1" aria-hidden="true">A</span>
+<span style="position:absolute;left:0;right:0;bottom:18px;text-align:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#8d8a78">[Foto do Ademir]</span>
+<span style="position:absolute;left:14px;top:14px;width:46px;height:46px;background:#e8b923;color:#0a0a0b;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;display:flex;align-items:center;justify-content:center;border-radius:4px" aria-hidden="true">A</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:0 8px">
+<h3 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:32px;line-height:1.05;text-transform:uppercase;color:#f2f2f4">Ademir [Sobrenome]</h3>
+<p style="margin:0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#e8b923;font-weight:600">[Cargo / especialidade]</p>
+</div>
+<div style="padding:0 8px;flex:1 1 auto">
+<p style="margin:0;font-size:15px;line-height:1.6;color:#8d9099">[Currículo do Ademir]</p>
+</div>
+<div style="padding:18px 8px 0;border-top:1px solid #26262b;display:flex;flex-direction:column;gap:6px">
+<a href="tel:+5543999122478" style="font-size:19px;color:#c9ccd1;padding:8px 0">(43) 99912-2478</a>
+<a class="btn-gold" href="https://wa.me/5543999122478" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase">Chamar no WhatsApp</a>
+</div>
+</article>
+
+<!-- CARLOS -->
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:20px 20px 28px;display:flex;flex-direction:column;gap:18px;min-width:0">
+<div style="position:relative;width:100%;aspect-ratio:4 / 5;border-radius:6px;overflow:hidden;background:#1d1a10;border:1px solid #2c2a1e;display:flex;align-items:center;justify-content:center">
+<span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:120px;color:#3a3418;line-height:1" aria-hidden="true">C</span>
+<img src="./assets/4f6cdd6f02ea0e714d6178d8c11747d9.jpg" width="720" height="894" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+<span style="position:absolute;left:14px;top:14px;width:46px;height:46px;background:#e8b923;color:#0a0a0b;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;display:flex;align-items:center;justify-content:center;border-radius:4px" aria-hidden="true">C</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:0 8px">
+<h3 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:32px;line-height:1.05;text-transform:uppercase;color:#f2f2f4">Carlos Donizetti de Freitas</h3>
+<p style="margin:0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#e8b923;font-weight:600">Gestor de segurança privada</p>
+</div>
+<div style="padding:0 8px;flex:1 1 auto;display:flex;flex-direction:column;gap:20px">
+<div>
+<p style="margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8d9099;font-weight:600">Experiência</p>
+<ul class="cv">
+<li>Mais de 15 anos de experiência em administradoras de shopping centers de referência</li>
+<li>Especialista em segurança física e eletrônica, gestão de riscos e auditorias</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8d9099;font-weight:600">Formação e certificações</p>
+<ul class="cv">
+<li>Graduado em Processos Gerenciais</li>
+<li>Especialização em Segurança Privada</li>
+<li>MBA Executivo em Safety &amp; Security</li>
+<li>MBA em Gestão Empresarial</li>
+<li>Certificação pela CEAS Brasil</li>
+<li>Credenciado como gestor e instrutor pela Polícia Federal</li>
+</ul>
+</div>
+</div>
+<div style="padding:18px 8px 0;border-top:1px solid #26262b;display:flex;flex-direction:column;gap:6px">
+<a href="tel:+5543984136296" style="font-size:19px;color:#c9ccd1;padding:8px 0">(43) 98413-6296</a>
+<a class="btn-gold" href="https://wa.me/5543984136296" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase">Chamar no WhatsApp</a>
+</div>
+</article>
+
+<!-- CELSO -->
+<article class="card" style="background:#131316;border:1px solid #26262b;border-radius:8px;padding:20px 20px 28px;display:flex;flex-direction:column;gap:18px;min-width:0">
+<div style="position:relative;width:100%;aspect-ratio:4 / 5;border-radius:6px;overflow:hidden;background:#1d1a10;border:1px solid #2c2a1e;display:flex;align-items:center;justify-content:center">
+<span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:120px;color:#3a3418;line-height:1" aria-hidden="true">C</span>
+<img src="./assets/66eec18075b443e4cd4c872805ee7994.jpg" width="640" height="800" alt="" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block">
+<span style="position:absolute;left:14px;top:14px;width:46px;height:46px;background:#e8b923;color:#0a0a0b;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;display:flex;align-items:center;justify-content:center;border-radius:4px" aria-hidden="true">C</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:0 8px">
+<h3 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:32px;line-height:1.05;text-transform:uppercase;color:#f2f2f4">Celso Eduardo da Silva</h3>
+<p style="margin:0;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#e8b923;font-weight:600">Ex-Agente Penitenciário do Estado da Bahia</p>
+</div>
+<div style="padding:0 8px;flex:1 1 auto;display:flex;flex-direction:column;gap:20px">
+<div>
+<p style="margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8d9099;font-weight:600">Formação e atuação</p>
+<ul class="cv">
+<li>Gestor em Segurança Privada pela Estácio de Sá Bahia, há mais de uma década</li>
+<li>Pós-graduado em Gestão de Segurança Privada e Sistemas Eletrônicos de Segurança</li>
+<li>Pós-graduado em Inteligência Estratégica pela ADESG-BA (Associação dos Diplomados da Escola Superior de Guerra)</li>
+<li>Pós-graduado em Política Estratégica pela ADESG-BA</li>
+<li>Extensão universitária em Riscos Organizacionais</li>
+<li>Instrutor credenciado junto à Polícia Federal há mais de uma década, em mais de 20 disciplinas</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8d9099;font-weight:600">Grandes eventos</p>
+<ul class="cv">
+<li>Copa do Mundo de Futebol 2014 (FIFA), Arena Fonte Nova</li>
+<li>Mundial de Luta Olímpica 2015, com 56 países, evento-teste das Olimpíadas 2016</li>
+<li>Mais de uma década no Carnaval de Salvador (BA)</li>
+</ul>
+</div>
+</div>
+<div style="padding:18px 8px 0;border-top:1px solid #26262b;display:flex;flex-direction:column;gap:6px">
+<a href="tel:+5543988531994" style="font-size:19px;color:#c9ccd1;padding:8px 0">(43) 98853-1994</a>
+<a class="btn-gold" href="https://wa.me/5543988531994" target="_blank" rel="noopener" style="align-self:flex-start;padding:12px 22px;border-radius:4px;font-weight:600;font-size:15px;letter-spacing:.04em;text-transform:uppercase">Chamar no WhatsApp</a>
+</div>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- CONTATO + INSTAGRAM -->
+<section id="contato" style="background:radial-gradient(ellipse at 20% 30%,#1a1710 0%,#0a0a0b 60%);border-top:1px solid #26262b">
+<div style="max-width:1200px;margin:0 auto;padding:88px 24px;display:flex;flex-wrap:wrap;gap:56px 72px;align-items:center">
+<div style="flex:1 1 400px;min-width:0">
+<p style="margin:0 0 16px;font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#e8b923;font-weight:600">Contato</p>
+<h2 style="margin:0 0 20px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1.05;text-transform:uppercase;color:#f2f2f4">Vamos conversar sobre a segurança da sua organização</h2>
+<p style="margin:0 0 32px;font-size:18px;line-height:1.6;color:#b9bcc4">Envie um e-mail, fale com um de nossos consultores ou nos siga no Instagram.</p>
+<a class="btn-gold" href="mailto:accconsultoria@gmail.com" style="display:inline-block;padding:16px 30px;border-radius:4px;font-weight:600;font-size:16px;letter-spacing:.02em;word-break:break-all">accconsultoria@gmail.com</a>
+<p style="margin:28px 0 0">
+<a class="btn-line" href="https://www.instagram.com/accconsultoria.seg" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:12px;padding:14px 24px;border-radius:4px;border:2px solid #4a4a52;color:#e9e9ec;font-weight:600;font-size:16px;letter-spacing:.02em">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"></circle></svg>
+@accconsultoria.seg
+</a>
+</p>
+</div>
+<div style="flex:1 1 280px;min-width:0;display:flex;justify-content:center">
+<div style="background:#ffffff;border-radius:20px;padding:20px;max-width:360px;width:100%;box-sizing:border-box">
+<img src="./assets/d67a26e5b0f61d3657151122959521c7.jpg" width="600" height="577" alt="QR Code do Instagram @accconsultoria.seg" style="width:100%;height:auto;aspect-ratio:600 / 577;display:block">
+</div>
+</div>
+</div>
+</section>
+
+<!-- RODAPÉ -->
+<footer style="background:#050506;border-top:1px solid #26262b">
+<div style="max-width:1200px;margin:0 auto;padding:28px 24px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center">
+<p style="margin:0;font-family:'Barlow Condensed',sans-serif;font-size:18px;letter-spacing:.12em;text-transform:uppercase;color:#c9ccd1">ACC · Assessoria e Consultoria em Segurança</p>
+<p style="margin:0;font-size:14px;color:#8d9099">© 2026 ACC. Todos os direitos reservados.</p>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5200}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
